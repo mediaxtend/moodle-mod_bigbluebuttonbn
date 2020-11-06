@@ -100,9 +100,9 @@ function bigbluebuttonbn_broker_meeting_info_can_join($bbbsession, $running, $pa
  * @return boolean
  */
 function bigbluebuttonbn_broker_meeting_info_can_end($bbbsession, $running) {
-    if ($running && ($bbbsession['administrator'] || $bbbsession['moderator'])) {
-        return array("can_end" => true);
-    }
+    // if ($running && ($bbbsession['administrator'] || $bbbsession['moderator'])) {
+    //     return array("can_end" => true);
+    // }
     return array("can_end" => false);
 }
 
